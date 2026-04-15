@@ -571,6 +571,27 @@
       </div>
     </div>
 
+    <!-- GitHub連携設定 -->
+    <div class="admin-section" style="border:2px solid #2ea44f44;background:#f6fff8;">
+      <h2 style="color:#2ea44f;">🔗 GitHub連携設定</h2>
+      <p style="font-size:.85rem;color:#666;margin-bottom:12px;">一度設定すれば「🚀 GitHubに自動公開」ボタンで自動アップロードできます</p>
+      <div class="form-group">
+        <label>GitHubトークン（Personal Access Token）</label>
+        <input type="password" id="github-token-input" placeholder="ghp_xxxxxxxxxxxx" style="font-family:monospace;" />
+        <small style="color:#888;font-size:.78rem;">※ トークンはあなたのブラウザにのみ保存されます（公開されません）</small>
+      </div>
+      <div class="form-group">
+        <label>GitHubユーザー名</label>
+        <input type="text" id="github-owner-input" placeholder="ayayank03" />
+      </div>
+      <div class="form-group">
+        <label>リポジトリ名</label>
+        <input type="text" id="github-repo-input" placeholder="chimmy-blog" />
+      </div>
+      <button class="btn-save" onclick="saveGitHubSettings()">💾 設定を保存</button>
+      <p id="github-settings-status" style="margin-top:8px;font-size:.85rem;"></p>
+    </div>
+
     <div style="text-align:center;margin-top:8px;">
       <button class="btn-secondary" onclick="toggleAdmin()">← ブログを確認する</button>
     </div>
